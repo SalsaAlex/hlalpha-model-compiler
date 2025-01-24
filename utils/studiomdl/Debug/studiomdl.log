@@ -1,0 +1,293 @@
+﻿  write.c
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(58): warning C4101: 'pbbox' : unreferenced local variable
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(55): warning C4101: 'j' : unreferenced local variable
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(123): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(332): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(379): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(394): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(514): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(524): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\write.c(506): warning C4101: 'i' : unreferenced local variable
+  tristrip.c
+  studiomdl.c
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(225): warning C4101: 'q' : unreferenced local variable
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(419): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(444): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(506): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(567): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(582): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(614): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strcmpi. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(214) : see declaration of 'strcmpi'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(706): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strcmpi. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(214) : see declaration of 'strcmpi'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(375): warning C4101: 'q' : unreferenced local variable
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1066): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1067): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1068): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1069): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1070): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1071): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1072): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1073): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1074): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1075): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1076): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1077): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1078): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1079): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1080): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1095): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1118): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1123): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1561): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1569): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1579): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1582): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1774): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1783): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1786): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1788): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1824): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1960): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(1977): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2003): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2013): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2044): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2051): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2058): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2144): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2161): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2170): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2174): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2195): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2215): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2226): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2228): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2249): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2286): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2317): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2381): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2383): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2390): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2398): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(324) : see declaration of 'sscanf'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2476): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2585): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2605): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2609): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2628): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2669): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2673): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2677): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2681): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2685): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2689): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2693): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2697): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2701): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2705): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2709): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2716): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2725): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2730): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2737): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(217) : see declaration of 'strnicmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2749): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(215) : see declaration of 'stricmp'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2752): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2762): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2807): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2820): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2832): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strcmpi. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(214) : see declaration of 'strcmpi'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2842): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(2926): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3017): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3029): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3061): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(157) : see declaration of 'strncpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3091): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3095): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3186): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3187): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3194): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3345): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3348): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3385): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3391): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\studiomdl\studiomdl.c(3401): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+  bmpread.c
+d:\github\hlalpha-model-compiler\utils\studiomdl\bmpread.c(38): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+  trilib.c
+d:\github\hlalpha-model-compiler\utils\common\trilib.c(76): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+  scriplib.c
+d:\github\hlalpha-model-compiler\utils\common\scriplib.c(52): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\scriplib.c(91): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+  mathlib.c
+  lbmlib.c
+d:\github\hlalpha-model-compiler\utils\common\lbmlib.c(260): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+d:\github\hlalpha-model-compiler\utils\common\lbmlib.c(379): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+  cmdlib.c
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(116): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdlib.h(447) : see declaration of 'getenv'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(119): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(121): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(124): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(128): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(131): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(132): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(133): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(205): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(208): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(222): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(224): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(238): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(366) : see declaration of 'sprintf'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(249): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(266): warning C4244: 'return' : conversion from 'time_t' to 'double', possible loss of data
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(289): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(306): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(126) : see declaration of 'strerror'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(323): warning C4244: 'return' : conversion from 'time_t' to 'int', possible loss of data
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(523): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(526): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(126) : see declaration of 'strerror'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(535): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\stdio.h(237) : see declaration of 'fopen'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(538): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(126) : see declaration of 'strerror'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(614): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(624): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(625): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(626): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(79) : see declaration of 'strcat'
+d:\github\hlalpha-model-compiler\utils\common\cmdlib.c(713): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 9.0\vc\include\string.h(74) : see declaration of 'strcpy'
+  Generating Code...
+  Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+  
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  
+  studiomdl.vcxproj -> D:\GitHub\hlalpha-model-compiler\utils\studiomdl\.\Debug\studiomdl.exe
