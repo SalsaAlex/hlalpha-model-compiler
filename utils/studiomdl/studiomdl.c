@@ -574,21 +574,6 @@ void SimplifyModel (void)
 		bonecontroller[i].bone = j;
 	}
 
-	// link attachments
-	for (i = 0; i < numattachments; i++)
-	{
-		for (j = 0; j < numbones; j++)
-		{
-			if (stricmp( attachment[i].bonename, bonetable[j].name) == 0)
-				break;
-		}
-		if (j >= numbones)
-		{
-			Error("unknown attachment link '%s'\n", attachment[i].bonename );
-		}
-		attachment[i].bone = j;
-	}
-
 	// relink model
 	for (i = 0; i < nummodels; i++)
 	{

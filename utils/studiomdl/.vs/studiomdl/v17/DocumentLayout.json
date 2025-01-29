@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|solutionrelative:studiomdl.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\write.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|solutionrelative:write.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|solutionrelative:studiomdl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|solutionrelative:studiomdl.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\bmpread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B6FB1AB-11B2-4E42-94DB-5870AB61F1FD}|studiomdl.vcxproj|solutionrelative:bmpread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\include\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -31,37 +35,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "write.c",
               "DocumentMoniker": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\write.c",
               "RelativeDocumentMoniker": "write.c",
               "ToolTip": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\write.c",
               "RelativeToolTip": "write.c",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAUwLQAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAAL0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-01-23T17:56:48.661Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "bmpread.c",
+              "DocumentMoniker": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\bmpread.c",
+              "RelativeDocumentMoniker": "bmpread.c",
+              "ToolTip": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\bmpread.c",
+              "RelativeToolTip": "bmpread.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-01-24T23:52:53.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "studiomdl.c",
               "DocumentMoniker": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.c",
               "RelativeDocumentMoniker": "studiomdl.c",
               "ToolTip": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.c",
               "RelativeToolTip": "studiomdl.c",
-              "ViewState": "AgIAABMAAAAAAAAAAAArwCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAArwF4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-01-23T18:51:33.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T18:51:33.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "cmdlib.h",
               "DocumentMoniker": "D:\\hl1-alpha-model-compiler\\studiomdlsourcecode\\utils\\common\\cmdlib.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\hl1-alpha-model-compiler\\studiomdlsourcecode\\utils\\common\\cmdlib.h",
@@ -73,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "studio.h",
               "DocumentMoniker": "D:\\hl1-alpha-model-compiler\\studiomdlsourcecode\\engine\\studio.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\hl1-alpha-model-compiler\\studiomdlsourcecode\\engine\\studio.h",
@@ -85,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "string.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\include\\string.h",
               "ToolTip": "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\include\\string.h",
@@ -95,15 +111,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "studiomdl.h",
               "DocumentMoniker": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.h",
               "RelativeDocumentMoniker": "studiomdl.h",
               "ToolTip": "D:\\GitHub\\hlalpha-model-compiler\\utils\\studiomdl\\studiomdl.h",
               "RelativeToolTip": "studiomdl.h",
-              "ViewState": "AgIAAPsAAAAAAAAAAAAUwAABAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAUwMoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-23T17:57:01.891Z"
+              "WhenOpened": "2025-01-23T17:57:01.891Z",
+              "EditorCaption": ""
             }
           ]
         }

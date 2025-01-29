@@ -4,5 +4,6 @@
     <LocalDebuggerCommandArguments>"D:\hl1-alpha-model-compiler\decompiledalpha\barney\barney.qc"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>D:\hl1-alpha-model-compiler\decompiledalpha\barney</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommand>D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\studiomdl.exe</LocalDebuggerCommand>
   </PropertyGroup>
 </Project>

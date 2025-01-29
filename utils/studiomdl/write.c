@@ -75,9 +75,7 @@ void WriteBoneInfo( )
 		pbone[i].unused[6] = 0;
 	}
 	pData += numbones * sizeof( mstudiobone_t );
-	pDatadummy += numbones * sizeof(mstudiobone_t);
 	ALIGN( pData );
-	ALIGN( pDatadummy );
 
 
 	// save bonecontroller info
@@ -92,9 +90,7 @@ void WriteBoneInfo( )
 		pbonecontroller[i].end			= bonecontroller[i].end;
 	}
 	pData += numbonecontrollers * sizeof( mstudiobonecontroller_t );
-	pDatadummy += numbonecontrollers * sizeof(mstudiobonecontroller_t);
 	ALIGN( pData );
-	ALIGN( pDatadummy );
 
 }
 
@@ -118,46 +114,46 @@ void WriteSequenceInfo( )
 	phdr->seqindex = (pData - pStart);
 	pData += numseq * sizeof( mstudioseqdesc_t );
 
-	for (i = 0; i < numseq; i++, pseqdesc++) 
+	for (i = 0; i < numseq; i++, pseqdesc++)
 	{
-		strcpy( pseqdesc->label, sequence[i].name );
-		pseqdesc->numframes		= sequence[i].numframes;
-		pseqdesc->fps			= sequence[i].fps;
-		pseqdesc->flags			= sequence[i].flags;
+		strcpy(pseqdesc->label, sequence[i].name);
+		pseqdesc->numframes = sequence[i].numframes;
+		pseqdesc->fps = sequence[i].fps;
+		pseqdesc->flags = sequence[i].flags;
 
-		pseqdesc->numblends		= sequence[i].numblends;
+		pseqdesc->numblends = sequence[i].numblends;
 
-		pseqdesc->motiontype	= sequence[i].motiontype;
-		pseqdesc->motionbone	= 0; // sequence[i].motionbone;
-		VectorCopy( sequence[i].linearmovement, pseqdesc->linearmovement );
+		pseqdesc->motiontype = sequence[i].motiontype;
+		pseqdesc->motionbone = 0; // sequence[i].motionbone;
+		VectorCopy(sequence[i].linearmovement, pseqdesc->linearmovement);
 
-		totalframes				+= sequence[i].numframes;
-		totalseconds			+= sequence[i].numframes / sequence[i].fps;
+		totalframes += sequence[i].numframes;
+		totalseconds += sequence[i].numframes / sequence[i].fps;
 
 		// save events
-		pevent					= (mstudioevent_t *)pData;
-		pseqdesc->numevents		= sequence[i].numevents;
-		pseqdesc->eventindex	= (pData - pStart);
-		pData += pseqdesc->numevents * sizeof( mstudioevent_t );
+		pevent = (mstudioevent_t*)pData;
+		pseqdesc->numevents = sequence[i].numevents;
+		pseqdesc->eventindex = (pData - pStart);
+		pData += pseqdesc->numevents * sizeof(mstudioevent_t);
 		for (j = 0; j < sequence[i].numevents; j++)
 		{
-			pevent[j].frame		= sequence[i].event[j].frame - sequence[i].frameoffset;
+			pevent[j].frame = sequence[i].event[j].frame - sequence[i].frameoffset;
 			pevent[j].type = sequence[i].event[j].event;
 		}
-		ALIGN( pData );
+		ALIGN(pData);
 
 		// save pivots
-		ppivot					= (mstudiopivot_t *)pData;
-		pseqdesc->numpivots		= sequence[i].numpivots;
-		pseqdesc->pivotindex	= (pData - pStart);
-		pData += pseqdesc->numpivots * sizeof( mstudiopivot_t );
+		ppivot = (mstudiopivot_t*)pData;
+		pseqdesc->numpivots = sequence[i].numpivots;
+		pseqdesc->pivotindex = (pData - pStart);
+		pData += pseqdesc->numpivots * sizeof(mstudiopivot_t);
 		for (j = 0; j < sequence[i].numpivots; j++)
 		{
-			VectorCopy( sequence[i].pivot[j].org, ppivot[j].org );
-			ppivot[j].start		= sequence[i].pivot[j].start - sequence[i].frameoffset;
-			ppivot[j].end		= sequence[i].pivot[j].end - sequence[i].frameoffset;
+			VectorCopy(sequence[i].pivot[j].org, ppivot[j].org);
+			ppivot[j].start = sequence[i].pivot[j].start - sequence[i].frameoffset;
+			ppivot[j].end = sequence[i].pivot[j].end - sequence[i].frameoffset;
 		}
-		ALIGN( pData );
+		ALIGN(pData);
 
 
 		panim = (mstudioanim_t*)pData;
@@ -170,29 +166,31 @@ void WriteSequenceInfo( )
 			panim[j].numpos = sequence[i].numframes;
 			panim[j].numrot = sequence[i].numframes;
 		}
-		ALIGN(pData);
 
-		panim->posindex = (pData - pStart);
-		pbonepos = (mstudiobonepos_t*)pData;
-		pData += sequence[i].numframes * sizeof(mstudiobonepos_t);
-		for (q = 0; q < sequence[i].numframes; q++) {
-			for (j = 0; j < numbones; j++) {
-				pbonepos[j].pos[0] = sequence[i].panim->pos[j][q][0];
-				pbonepos[j].pos[1] = sequence[i].panim->pos[j][q][1];
-				pbonepos[j].pos[2] = sequence[i].panim->pos[j][q][2];
-				pbonepos[j].frame = q;
+		//bone position
+		for (j = 0; j < numbones; j++) {
+			pbonepos = (mstudiobonepos_t*)pData;
+			panim[j].posindex = (pData - pStart);
+			for (q = 0; q < sequence[i].numframes; q++) {
+				pData += sizeof(mstudiobonepos_t);
+				pbonepos[q].pos[0] = sequence[i].panim->pos[j][q][0];
+				pbonepos[q].pos[1] = sequence[i].panim->pos[j][q][1];
+				pbonepos[q].pos[2] = sequence[i].panim->pos[j][q][2];
+				pbonepos[q].frame = q;
 			}
 		}
 		ALIGN(pData);
-		panim->rotindex = (pData - pStart);
-		pbonerot = (mstudiobonerot_t*)pData;
-		pData += sequence[i].numframes * sizeof(mstudiobonerot_t);
-		for (q = 0; q < sequence[i].numframes; q++) {
-			for (j = 0; j < numbones; j++) {
-				pbonerot[j].angle[0] = sequence[i].panim->rot[j][q][0];
-				pbonerot[j].angle[1] = sequence[i].panim->rot[j][q][1];
-				pbonerot[j].angle[2] = sequence[i].panim->rot[j][q][2];
-				pbonerot[j].frame = q;
+
+		//bone rotation
+		for (j = 0; j < numbones; j++) {
+			pbonerot = (mstudiobonerot_t*)pData;
+			panim[j].rotindex = (pData - pStart);
+			for (q = 0; q < sequence[i].numframes; q++) {
+				pData += sizeof(mstudiobonerot_t);
+				pbonerot[q].angle[0] = sequence[i].panim->rot[j][q][0];
+				pbonerot[q].angle[1] = sequence[i].panim->rot[j][q][1];
+				pbonerot[q].angle[2] = sequence[i].panim->rot[j][q][2];
+				pbonerot[q].frame = q;
 			}
 		}
 		ALIGN(pData);
