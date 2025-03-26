@@ -94,25 +94,51 @@ void WriteBoneInfo( )
 
 }
 
+#define RAD2DEG( x ) ((double)(x) * (double)(180.0 / Q_PI))
+#define DEG2RAD( x ) ((double)(x) * (double)(Q_PI / 180.0))
 
-void WriteSequenceInfo( )
+float *Matrix3x4_AnglesFromMatrix(const vec_t in[3][4])
+{
+	float* out;
+	float xyDist = sqrt(in[0][0] * in[0][0] + in[1][0] * in[1][0]);
+
+	if (xyDist > 0.001f)
+	{
+		// enough here to get angles?
+		out[0] = RAD2DEG(atan2(-in[2][0], xyDist));
+		out[1] = RAD2DEG(atan2(in[1][0], in[0][0]));
+		out[2] = RAD2DEG(atan2(in[2][1], in[2][2]));
+	}
+	else
+	{
+		// forward is mostly Z, gimbal lock
+		out[0] = RAD2DEG(atan2(-in[2][0], xyDist));
+		out[1] = RAD2DEG(atan2(-in[0][1], in[1][1]));
+		out[2] = 0.0f;
+	}
+	return out;
+}
+
+
+void WriteSequenceInfo()
 {
 	int i, j, q;
 	mstudiobonepos_t* pbonepos;
 	mstudiobonerot_t* pbonerot;
 	mstudioanim_t* panim;
 
-	mstudioseqdesc_t	*pseqdesc;
-	mstudioseqdesc_t	*pbaseseqdesc;
-	mstudioevent_t		*pevent;
-	mstudiopivot_t		*ppivot;
+	float angletest[3];
 
+	mstudioseqdesc_t* pseqdesc;
+	mstudioseqdesc_t* pbaseseqdesc;
+	mstudioevent_t* pevent;
+	mstudiopivot_t* ppivot;
 	// save sequence info
-	pseqdesc = (mstudioseqdesc_t *)pData;
+	pseqdesc = (mstudioseqdesc_t*)pData;
 	pbaseseqdesc = pseqdesc;
 	phdr->numseq = numseq;
 	phdr->seqindex = (pData - pStart);
-	pData += numseq * sizeof( mstudioseqdesc_t );
+	pData += numseq * sizeof(mstudioseqdesc_t);
 
 	for (i = 0; i < numseq; i++, pseqdesc++)
 	{
@@ -159,13 +185,33 @@ void WriteSequenceInfo( )
 		panim = (mstudioanim_t*)pData;
 		sequence[i].animindex = (pData - pStart);
 		pseqdesc->animindex = sequence[i].animindex;
-		pData += numbones * sizeof(mstudioanim_t);
+		pData += (numbones * 2) * sizeof(mstudioanim_t);
 		// Write the panim header
 		for (j = 0; j < numbones; j++)
 		{
 			panim[j].numpos = sequence[i].numframes;
 			panim[j].numrot = sequence[i].numframes;
 		}
+
+		ALIGN(pData);
+
+		//bone rotation
+		for (j = 0; j < numbones; j++) {
+			pbonerot = (mstudiobonerot_t*)pData;
+			panim[j].rotindex = (pData - pStart);
+			for (q = 0; q < sequence[i].numframes; q++) {
+				pData += sizeof(mstudiobonerot_t);
+				angletest[0] = sequence[i].panim->rot[j][q][0] * (180.0 / Q_PI);
+				angletest[1] = sequence[i].panim->rot[j][q][1] * (180.0 / Q_PI);
+				angletest[2] = sequence[i].panim->rot[j][q][2] * (180.0 / Q_PI);
+				pbonerot[q].angle[0] = (float)angletest[0] * 100;
+				pbonerot[q].angle[1] = (float)angletest[1] * 100; //wtf this works ???
+				pbonerot[q].angle[2] = (float)angletest[2] * 100;
+				pbonerot[q].frame = q;
+			}
+		}
+
+		ALIGN(pData);
 
 		//bone position
 		for (j = 0; j < numbones; j++) {
@@ -177,20 +223,6 @@ void WriteSequenceInfo( )
 				pbonepos[q].pos[1] = sequence[i].panim->pos[j][q][1];
 				pbonepos[q].pos[2] = sequence[i].panim->pos[j][q][2];
 				pbonepos[q].frame = q;
-			}
-		}
-		ALIGN(pData);
-
-		//bone rotation
-		for (j = 0; j < numbones; j++) {
-			pbonerot = (mstudiobonerot_t*)pData;
-			panim[j].rotindex = (pData - pStart);
-			for (q = 0; q < sequence[i].numframes; q++) {
-				pData += sizeof(mstudiobonerot_t);
-				pbonerot[q].angle[0] = sequence[i].panim->rot[j][q][0];
-				pbonerot[q].angle[1] = sequence[i].panim->rot[j][q][1];
-				pbonerot[q].angle[2] = sequence[i].panim->rot[j][q][2];
-				pbonerot[q].frame = q;
 			}
 		}
 		ALIGN(pData);
@@ -283,9 +315,9 @@ byte *WriteAnimations(byte *pData, byte *pStart, int group) {
 
         for (q = 0; q < sequence[i].numframes; q++) {
             for (j = 0; j < numbones; j++) {
-                pbonerot[j].angle[0] = sequence[i].panim->rot[j][q][0];
-                pbonerot[j].angle[1] = sequence[i].panim->rot[j][q][1];
-                pbonerot[j].angle[2] = sequence[i].panim->rot[j][q][2];
+                pbonerot[j].angle[0] = sequence[i].panim->rot[j][q][0] * (180.0 / Q_PI);
+                pbonerot[j].angle[1] = sequence[i].panim->rot[j][q][1] * (180.0 / Q_PI);
+                pbonerot[j].angle[2] = sequence[i].panim->rot[j][q][2] * (180.0 / Q_PI);
                 pbonerot[j].frame = q;
             }
         }
@@ -351,7 +383,8 @@ void WriteModel( )
 	vec3_t			*pvert;
 	vec3_t			*pnorm;
 	mstudiomesh_t	*pmesh;
-	s_trianglevert_t *psrctri;
+	s_trianglevert_t*psrctri;
+	mstudiotrivert_t* psrctritest;
 	int				cur;
 	int				total_tris = 0;
 	int				total_strips = 0;
@@ -370,6 +403,7 @@ void WriteModel( )
 	}
 
 	pmodeldata = (mstudiomodeldata_t*)pData;
+	pmodel[i].modeldataindex = (pData - pStart);
 	pData += sizeof(mstudiomodeldata_t);
 
 	for (i = 0, j = 0; i < numbodyparts; i++)
@@ -423,7 +457,7 @@ void WriteModel( )
 		pmodel[i].norminfoindex = ((byte *)pbone - pStart);
 		for (j = 0; j < pmodel[i].numnorms; j++)
 		{
-			*pbone++ = model[i]->normal[normimap[j]].bone;
+			*pbone++ = model[i]->normal[j].bone;
 		}
 		ALIGN( pbone );
 
@@ -431,24 +465,29 @@ void WriteModel( )
 
 		// save group info
 		pvert = (vec3_t *)pData;
+		pmodeldata[i].vertindex = (pData - pStart);
 		pData += model[i]->numverts * sizeof( vec3_t );
-		pmodeldata[i].vertindex		= ((byte *)pvert - pStart); 
+		pmodeldata[i].numverts = model[i]->numverts;
 		ALIGN( pData );			
 
 		pnorm = (vec3_t *)pData;
+		pmodeldata[i].normindex = (pData - pStart);
 		pData += model[i]->numnorms * sizeof( vec3_t );
-		pmodeldata[i].normindex		= ((byte *)pnorm - pStart); 
+		pmodeldata[i].numnorms = model[i]->numnorms;
 		ALIGN( pData );
 
 
 		for (j = 0; j < model[i]->numverts; j++)
 		{
 			VectorCopy( model[i]->vert[j].org, pvert[j] );
+			pvert[j][0] += 10; //
+			pvert[j][1] += 10; //just messin around
+			pvert[j][2] += 10; //
 		}
 
 		for (j = 0; j < model[i]->numnorms; j++)
 		{
-			VectorCopy( model[i]->normal[normimap[j]].org, pnorm[j] );
+			VectorCopy( model[i]->normal[j].org, pnorm[j] );
 		}
 		printf("vertices  %6d bytes (%d vertices, %d normals)\n", pData - cur, model[i]->numverts, model[i]->numnorms);
 		cur = (int)pData;
@@ -458,32 +497,34 @@ void WriteModel( )
 		pmodel[i].nummesh		= model[i]->nummesh;
 		pmodel[i].meshindex		= (pData - pStart);
 		pData += pmodel[i].nummesh * sizeof( mstudiomesh_t );
-		ALIGN( pData );
 
 		total_tris = 0;
 		total_strips = 0;
 		for (j = 0; j < model[i]->nummesh; j++)
 		{
 			int numCmdBytes;
-			byte *pCmdSrc;
+			byte* pCmdSrc;
 
-			pmesh[j].numtris	= model[i]->pmesh[j]->numtris;
-			pmesh[j].skinref	= model[i]->pmesh[j]->skinref;
-			pmesh[j].numnorms	= model[i]->pmesh[j]->numnorms;
+			pmesh[j].numtris = model[i]->pmesh[j]->numtris;
+			pmesh[j].skinref = model[i]->pmesh[j]->skinref;
+			pmesh[j].numnorms = model[i]->pmesh[j]->numnorms;
 
-			psrctri				= (s_trianglevert_t *)(model[i]->pmesh[j]->triangle);
-			for (k = 0; k < pmesh[j].numtris * 3; k++) 
+			pmesh[j].triindex = (pData - pStart);
+
+			psrctritest = (mstudiotrivert_t*)pData;
+			psrctri = (s_trianglevert_t*)(model[i]->pmesh[j]->triangle);
+			for (k = 0; k < pmesh[j].numtris * 3;)
 			{
-				psrctri->normindex	= normmap[psrctri->normindex];
+				psrctritest[k].normindex = psrctri->normindex;
+				psrctritest[k].vertindex = psrctri->vertindex;
+				psrctritest[k].s = psrctri->s;
+				psrctritest[k].t = psrctri->t;
 				psrctri++;
+				k++;
+				pData += sizeof(mstudiotrivert_t);
 			}
 
-			numCmdBytes = BuildTris( model[i]->pmesh[j]->triangle, model[i]->pmesh[j], &pCmdSrc );
-
-			pmesh[j].triindex	= (pData - pStart);
-			memcpy( pData, pCmdSrc, numCmdBytes );
-			pData += numCmdBytes;
-			ALIGN( pData );
+			ALIGN(pData);
 			total_tris += pmesh[j].numtris;
 			total_strips += numcommandnodes;
 		}

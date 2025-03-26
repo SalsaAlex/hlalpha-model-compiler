@@ -1,0 +1,9 @@
+D:\GitHub\hlalpha-model-compiler\utils\common\cmdlib.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\cmdlib.obj
+D:\GitHub\hlalpha-model-compiler\utils\common\lbmlib.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\lbmlib.obj
+D:\GitHub\hlalpha-model-compiler\utils\common\mathlib.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\mathlib.obj
+D:\GitHub\hlalpha-model-compiler\utils\common\scriplib.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\scriplib.obj
+D:\GitHub\hlalpha-model-compiler\utils\common\trilib.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\trilib.obj
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\bmpread.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\bmpread.obj
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\studiomdl.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\studiomdl.obj
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\tristrip.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\tristrip.obj
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c;D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\write.obj

@@ -305,14 +305,12 @@ typedef struct
 } mstudiomesh_t;
 
 // triangles
-#if 0
 typedef struct 
 {
 	short				vertindex;		// index into vertex array
 	short				normindex;		// index into normal array
 	short				s,t;			// s,t position on skin
 } mstudiotrivert_t;
-#endif
 
 // lighting options
 #define STUDIO_NF_FLATSHADE		0x0001

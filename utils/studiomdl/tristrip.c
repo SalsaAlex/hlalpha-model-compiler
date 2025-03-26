@@ -324,7 +324,7 @@ int BuildTris (s_trianglevert_t (*x)[3], s_mesh_t *y, byte **ppdata )
 
 		for (j=0 ; j<bestlen ; j++)
 		{
-			s_trianglevert_t *tri;
+			mstudiotrivert_t *tri;
 
 			tri = &triangles[besttris[j]][bestverts[j]];
 
