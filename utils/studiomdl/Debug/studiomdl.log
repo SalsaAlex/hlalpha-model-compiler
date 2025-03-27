@@ -5,12 +5,12 @@ D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(58,17): warning C4101: 
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(55,9): warning C4101: 'j': unreferenced local variable
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(145,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(362,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(492,10): warning C4477: 'printf' : format string '%6d' requires an argument of type 'int', but variadic argument 1 has type 'byte *'
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(491,10): warning C4477: 'printf' : format string '%6d' requires an argument of type 'int', but variadic argument 1 has type 'byte *'
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(531,10): warning C4477: 'printf' : format string '%6d' requires an argument of type 'int', but variadic argument 1 has type 'byte *'
-D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(411,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(426,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(506,10): warning C4101: 'pCmdSrc': unreferenced local variable
-D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(505,8): warning C4101: 'numCmdBytes': unreferenced local variable
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(409,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(424,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(505,10): warning C4101: 'pCmdSrc': unreferenced local variable
+D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(504,8): warning C4101: 'numCmdBytes': unreferenced local variable
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(553,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(563,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\GitHub\hlalpha-model-compiler\utils\studiomdl\write.c(545,8): warning C4101: 'i': unreferenced local variable

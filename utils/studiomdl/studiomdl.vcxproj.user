@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>"D:\hl1-alpha-model-compiler\decompiledalpha\barney\barney.qc"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>"D:\hl1-alpha-model-compiler\decompiledalpha\scientist\scientist.qc"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerWorkingDirectory>D:\hl1-alpha-model-compiler\decompiledalpha\barney</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:\hl1-alpha-model-compiler\decompiledalpha\scientist\</LocalDebuggerWorkingDirectory>
     <LocalDebuggerCommand>D:\GitHub\hlalpha-model-compiler\utils\studiomdl\Debug\studiomdl.exe</LocalDebuggerCommand>
   </PropertyGroup>
 </Project>

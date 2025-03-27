@@ -395,16 +395,14 @@ void WriteModel( )
 	pData += numbodyparts * sizeof( mstudiobodyparts_t );
 
 	pmodel = (mstudiomodel_t *)pData;
-	pData += nummodels * sizeof( mstudiomodel_t );
+	pData += nummodels * sizeof(mstudiomodel_t);
 
+	pmodeldata = (mstudiomodeldata_t*)pData;
 	for (i = 0; i < nummodels; i++)
 	{
 		pmodel[i].modeldataindex = (pData - pStart);
+		pData += sizeof(mstudiomodeldata_t);
 	}
-
-	pmodeldata = (mstudiomodeldata_t*)pData;
-	pmodel[i].modeldataindex = (pData - pStart);
-	pData += sizeof(mstudiomodeldata_t);
 
 	for (i = 0, j = 0; i < numbodyparts; i++)
 	{
@@ -424,6 +422,10 @@ void WriteModel( )
 		int n = 0;
 
 		strcpy( pmodel[i].name, model[i]->name );
+
+		//pmodeldata[i] = (mstudiomodeldata_t*)pData;
+		//pmodel[i].modeldataindex = ((byte*)pmodeldata - pStart);
+		//pData += sizeof(mstudiomodeldata_t);
 
 		// save bbox info
 
@@ -457,7 +459,7 @@ void WriteModel( )
 		pmodel[i].norminfoindex = ((byte *)pbone - pStart);
 		for (j = 0; j < pmodel[i].numnorms; j++)
 		{
-			*pbone++ = model[i]->normal[j].bone;
+			*pbone++ = model[i]->normal[normimap[j]].bone;
 		}
 		ALIGN( pbone );
 
@@ -480,14 +482,11 @@ void WriteModel( )
 		for (j = 0; j < model[i]->numverts; j++)
 		{
 			VectorCopy( model[i]->vert[j].org, pvert[j] );
-			pvert[j][0] += 10; //
-			pvert[j][1] += 10; //just messin around
-			pvert[j][2] += 10; //
 		}
 
 		for (j = 0; j < model[i]->numnorms; j++)
 		{
-			VectorCopy( model[i]->normal[j].org, pnorm[j] );
+			VectorCopy( model[i]->normal[normimap[j]].org, pnorm[j] );
 		}
 		printf("vertices  %6d bytes (%d vertices, %d normals)\n", pData - cur, model[i]->numverts, model[i]->numnorms);
 		cur = (int)pData;
@@ -513,15 +512,16 @@ void WriteModel( )
 
 			psrctritest = (mstudiotrivert_t*)pData;
 			psrctri = (s_trianglevert_t*)(model[i]->pmesh[j]->triangle);
+			pData += sizeof(mstudiotrivert_t) * (pmesh[j].numtris * 3);
 			for (k = 0; k < pmesh[j].numtris * 3;)
 			{
-				psrctritest[k].normindex = psrctri->normindex;
+				psrctritest[k].normindex = normmap[psrctri->normindex];
 				psrctritest[k].vertindex = psrctri->vertindex;
+
 				psrctritest[k].s = psrctri->s;
 				psrctritest[k].t = psrctri->t;
 				psrctri++;
 				k++;
-				pData += sizeof(mstudiotrivert_t);
 			}
 
 			ALIGN(pData);
