@@ -1,4 +1,4 @@
-##This project has been discontinued in favor of a more up-to-date project, see BlackShadow/re-ALPHA/
+### This project has been discontinued in favor of a more up-to-date project, see BlackShadow/re-ALPHA/
 
 (W.I.P) mdl v6 compiler for the half-life alpha engine
 
